@@ -1,7 +1,10 @@
 {
   "name": "youtube-anti-spoiler",
-  "module": "index.ts",
+  "module": "index.js",
   "type": "module",
+  "scripts": {
+    "build": "bun scripts/build.ts"
+  },
   "devDependencies": {
     "bun-types": "latest"
   },
