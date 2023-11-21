@@ -1,9 +1,9 @@
 {
   "name": "Youtube Anti Spoiler",
   "namespace": "https://santus.dev/",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Anti Spoiler for Youtube",
-  "author": "Krisantus Wanandi",
+  "author": "Krisantus Wanandi (https://github.com/krisantuswanandi)",
   "match": [
     "https://www.youtube.com/**"
   ],
@@ -14,5 +14,7 @@
     "GM_registerMenuCommand",
     "GM_unregisterMenuCommand"
   ],
-  "run-at": "document-body"
+  "run-at": "document-body",
+  "license": "MIT",
+  "supportURL": "https://github.com/krisantuswanandi/youtube-anti-spoiler"
 }
