@@ -4,6 +4,7 @@
 import { injectStyle } from "./style";
 import { checkStorage } from "./storage";
 import { setAntiSpoilerElements } from "./toggle";
+import { addButton } from "./button";
 import { SHORTCUT_KEY } from "./constant";
 
 let isAntiSpoiler = false;
@@ -19,6 +20,11 @@ function init() {
   isAntiSpoiler = checkStorage();
   setAntiSpoilerElements(isAntiSpoiler);
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+  const button = addButton();
+  button.addEventListener("click", toggleAntiSpoiler);
+});
 
 window.addEventListener("keydown", (event) => {
   if ((event.target as HTMLElement).id === "search") {
