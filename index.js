@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Youtube Anti Spoiler
 // @namespace https://santus.dev/
-// @version 0.0.2
+// @version 0.0.3
 // @description Anti Spoiler for Youtube
 // @author Krisantus Wanandi (https://github.com/krisantuswanandi)
 // @match https://www.youtube.com/**
@@ -97,7 +97,7 @@ var init = function() {
   setAntiSpoilerElements(isAntiSpoiler);
 };
 var isAntiSpoiler = false;
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
   const button2 = addButton();
   button2.addEventListener("click", toggleAntiSpoiler);
 });

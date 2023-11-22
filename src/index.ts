@@ -21,7 +21,7 @@ function init() {
   setAntiSpoilerElements(isAntiSpoiler);
 }
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
   const button = addButton();
   button.addEventListener("click", toggleAntiSpoiler);
 });
