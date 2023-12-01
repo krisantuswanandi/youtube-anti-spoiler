@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Youtube Anti Spoiler
 // @namespace https://santus.dev/
-// @version 0.0.3
+// @version 0.0.4
 // @description Anti Spoiler for Youtube
 // @author Krisantus Wanandi (https://github.com/krisantuswanandi)
 // @match https://www.youtube.com/**
@@ -78,6 +78,10 @@ body.${STYLE_NAME} .ytp-anti-spoiler-button.ytp-button .ytp-anti-spoiler-on {
 
 body.${STYLE_NAME} .ytp-anti-spoiler-button.ytp-button .ytp-anti-spoiler-off {
   display: block;
+}
+
+.ytp-inline-preview-controls .ytp-anti-spoiler-button.ytp-button {
+  display: none;
 }
 `;
   document.head.appendChild(style);

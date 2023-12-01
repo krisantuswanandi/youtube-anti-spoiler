@@ -1,7 +1,7 @@
 {
   "name": "Youtube Anti Spoiler",
   "namespace": "https://santus.dev/",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Anti Spoiler for Youtube",
   "author": "Krisantus Wanandi (https://github.com/krisantuswanandi)",
   "match": [

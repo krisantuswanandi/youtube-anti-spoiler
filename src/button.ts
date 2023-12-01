@@ -31,6 +31,10 @@ body.${STYLE_NAME} .ytp-anti-spoiler-button.ytp-button .ytp-anti-spoiler-on {
 body.${STYLE_NAME} .ytp-anti-spoiler-button.ytp-button .ytp-anti-spoiler-off {
   display: block;
 }
+
+.ytp-inline-preview-controls .ytp-anti-spoiler-button.ytp-button {
+  display: none;
+}
 `;
 
   document.head.appendChild(style);
